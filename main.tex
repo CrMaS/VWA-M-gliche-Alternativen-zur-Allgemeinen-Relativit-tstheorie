@@ -1,28 +1,88 @@
-\documentclass[a4paper, 12pt]{article}
 
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper, total={150mm,240mm}]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
-\usepackage{amsmath}
+\usepackage[ngerman, english]{babel}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{titling,lipsum}
 \usepackage{mathtools}
+
+\usepackage{graphicx}
+\usepackage[absolute]{textpos}
+  \setlength{\TPHorizModule}{1mm}
+  \setlength{\TPVertModule}{1mm}
+  
+\author{\textbf{\Large{Maximilian Schubert}}}
+\title{\large{Vorwissenschaftliche Arbeit im Rahmen der Reifeprüfung}\\\vspace{50mm}\textbf{\LARGE{Mögliche Alternativen Zur Allgemeinen Relativitätstheorie}}}
+\date{\large{8D \hspace*{10mm} 2018/19}}
+
 \begin{document}
-\title{Mögliche Alternativen zur Allgemeinen Relativitäthstheorie}
-\author{Maximilian Schubert}
-\date{}
+
+\begin{titlingpage}
+\singlespacing
 \maketitle
+
+\begin{textblock}{124}(138,5)
+	\begin{figure}
+	\includegraphics[width=160pt]{SKPLogo.eps}
+	\end{figure}
+\end{textblock}
+
+\begin{center}
+\vspace{96mm}
+\large{
+Bundesgymnasium und Bundesrealgymnasium Wien 4
+\linebreak
+Wiedner Gymnasium/Sir Karl Popper Schule
+\linebreak
+A-1040 Wien, Wiedner Gürtel 68
+\vspace{10mm}
+\linebreak
+Betreuungslehrperson: MMag. Matthias Köck
+\vspace{4mm}
+\linebreak
+Vorgelegt am Datum (tt.mm.jjjj)
+}
+\end{center}
+\end{titlingpage}
+\pagebreak
+\begin{abstract}
+    
+\end{abstract}
+
+\newpage
+
+\begin{otherlanguage}{ngerman}
+\tableofcontents
+\end{otherlanguage}
+\newpage
+
 \section{Einleitung} 
 
-Eine der bedeutensten wissenschaftlichen Vorlesungen im Bereich der Physik (des 20ten Jahrhundert) trug der theoretische Physiker und spätere Nobelpreisträger Albert Einstein am 25. November 1915 an der Preußischen Akademie der Wisschenschaften vor. Durch (die Idee einer gekrümmten Raumzeit und derer Formulierung) eine geometrische Formulierung der gekrümmten Raumzeit konnte (er) die Gravitation über das bis dahin gängige newtonische Weltbild hinaus beschreiben (beschrieben werden). Der am 20. März 1916 in den " Annalen der Physik" veröffentliche Artikel "Die Grundlage der allgemeinen Relativitätstheorie"  bietet die erste Grundlage für die einsteinische (korrekte?) Interpretation der Raumzeit. 
+Eine der bedeutendsten wissenschaftlichen Vorlesungen im Bereich der Physik (des zwanzigsten Jahrhunderts) trug der theoretische Physiker und spätere Nobelpreisträger Albert Einstein am 25. November 1915 an der Preußischen Akademie der Wissenschaften vor. Durch die Idee einer gekrümmten Raum-Zeit und derer Formulierung konnte er die Gravitation über das bis dahin gängige newtonische Weltbild hinaus beschreiben. Der am 20. März 1916 in den >>Annalen der Physik<< veröffentliche Artikel >>Die Grundlage der allgemeinen Relativitätstheorie<<  bietet die erste umfassende Beschreibung für die einsteinische Interpretation der Raum-Zeit. Bis zur experimentellen Verifizierung im Jahre 1919 galt Einstein`s Theorie im Volksmund als umstritten, da sie postulierte Raum und Zeit seien veränderbar und rein relativistischer Natur. Einstein erlangte hohes Ansehen, da seine Theorie allgemein anerkannt und als eine der größten wissenschaftlichen Durchbrüche aufgefasst wurde (und teils noch immer wird). Bis zum Ende seines Lebens suchte Einstein vergeblichst nach einer einheitlichen Feldtheorie des Elektromagnetismus und der Gravitationskraft (Starke und Schwache Kraft sind zu dem Zeitpunkt noch nicht gefunden worden). Jedoch stellt sich dieses Problem als schwerwiegender heraus als man zunächst dachte und gilt bis heute als größte Aufgabe der modernen Physik. Um dieses Problem zu lösen entwickelten Forscher alternativ Theorien und hofften so eine >>Grand Unified Theory (GUT)\footnote{im Deutschen: Große verinheitlichte Theorie}<< bzw. eine >>Theory of Everything (TOE)\footnote{im Deutschen: Theorie von Allem}<< zu finden. Mögliche Vorreiter für solch eine Theorie sind die Stringtheorie, auf die sich diese Arbeit konzentrieren/fokusieren wird, die Schleifenquantengravitation und die Supergravitation, die ich mich im dritten Kapitel kurz vorstellen werde.
+Das Problem der Renormierung, das die Basis für die Schwierigkeit einer Vereinigung von Quantenmechanik und Allgemeiner Relativitätstheorie bietet, wird im zweiten Kapitel erläutert. Der Hauptteil dieser Arbeit ist jedoch das vierte Kapitel in der die Stringtheorie auf ihre allgemeinrelativistischen Aspekte untersucht wird und welche Schwierigkeiten eine Formulierung einer Welt aus Strings mit sich bringt. 
 
-Die vorliegende Arbeit wird sich in Kapitel 2 mit der Frage auseinandersetzten, welche Aspekte der ART in allternativ Theorien übernommen werden müssen und welche angepasst werden können. Im Folgenen 
+\newpage
 \section{Renormierungsproblem}
+
+\begin{quote} Sowohl die Quantenmechanik als auch die Allgemeine Relativitätstheorie sind bedeutende Errungenschaften der Physik des vorigen Jahrhunderts. Allerdings gibt es ein Problem: Beide sind schwer miteinander in Einklang zu bringen. Die Schwierigkeit hängt mit der sogenannten Renormierbarkeit zusammen. [...] Es zeigt sich, dass Photonen auf eine renormierbare, Gravitonen\footnote{Das Graviton ist ein hypothetisches Teilchen (konnte also noch nicht nachgewiesen werden) und soll das Trägerteilchen der Gravitationsstrahlung sein (vgl. Gubser 2011, 33), die im Jahre 2016 direkt nachgewiesen wurde } dagegen auf eine nicht renormierbare und damit eigentlich nurtzlose Theorie führen. (Gubser 2011, 43)\end{quote}
+
+Photonen wechselwirken mit elektrischen Ladungen, ohne allerdings selbst geladen zu sein, weshalb sie nicht mit sich selbst wechselwirken können. Gravitonen dagegen wechselwirken mit Masse und Energie\footnote{die laut der Speziellen Relativitätstheorie zusammenhängend sind, $ E=mc^2$}. Da sie Energie transportieren wechselwirken sie auch mit sich selbst, ziehen sich also selbst an. Die Anziehungskraft eines Gravitons ist umso stärker, je geringer der Abstand von ihm ist. Sein Gravitationsfeld also lässt sich als Emission weiterer Gravitonen auffassen. Um übersichtlich zu bleiben, bezeichnen wir das ursprüngliche Graviton als Muttergraviton und die Gravitonen, die es aussendet, als Tochtergravitonen. Nahe beim Muttergraviton ist das Gravitationsfeld enorm stark, weshalb die Tochtergravitonen eine hohe Energie und einen großen Impuls haben\footnote{Dies ist eine Folge des Unbestimmtheitsprinzips: Die Tochtergravitonen werden in geringer Entfernung $\Delta x$ vom Muttergraviton beobachtet, sodass ihr Impuls wegen $\Delta p * \Delta x \geq h/4\pi $ eine große Unschärfe $\Delta p$ hat (Gubser 2011, 44)}. Das ist ein massives Problem, da jedes Tochergraviton selbst ein Graviton aussendet und eine Teilchenlawine entsteht und die Wirkungen aller dieser Gravitonen nicht mehr nachverfolgbar ist. Jedoch geschieht etwas Ähnliches auch in der Nähe von Elektronen, misst man nämlich das elektrische Feld um das Elektron herum, wird es gestört und dazu angeregt Photonen mit hohem Impuls zu emittieren. Photonen aber können keinen weiteren Photonen emittieren, können aber in Elektronen und Antielektronen zerfallen, die wiederum Photonen emittieren können. Überraschenderweise kann man durch das Einführen von einem >>bekleideten<<\footnote{ Das ist ein Hilfskonstruktion, die das Elektron zusammen mit der Wolke seiner Nachkommen, von der es umgeben ist, beschreibt. (Gubser 2011, 46)} Elektron und >>virtuellen Teilchen<< das Problem mathematisch lösen. Dieses Verfahren heißt Renormierung, deren Grundidee ist, dass ein Elektron durchaus unendliche Ladung und Masse haben kann, diese Größen jedoch endlich werden, sobald das Elektron >>bekleidet<< wird. Das Graviton hat jedoch das Problem, dass die Wolke virtueller Gravitonen sich nicht renormieren lässt. (vgl. Gubser 2011, 44-46) \begin{quote}Wie die meisten Forscher auf diesem Gebiet bin ich allerdings ziemlich sicher, dass die Schwierigkeit bei der Vereinigung von Quantenmechanik und Gravitationstheorie durchaus prinzipieller Art sind. (Gubser 2011, 46)\end{quote}
+
+Diese Ansicht Gubser`s wird mittlerweile von einigen Wissenschaftlern geteilt und führt dazu, dass Theorien wie die Stringtheorie oder die Schleifenquantengravitation einen neuen noch nie zuvor dagewesenen physikalischen Ansatz haben müssen. Bei der Stringtheorie wäre das die Einführung von Strings, welche die zurzeit gängige punktförmige Vorstellung von Quanten durch fadenförmige unendlich dünne Gebilde, die jedoch eine definierte Länge\footnote{$10^{-34}m$ was in etwa der Planck-Länge ($10^{-35}m$) entspricht (vgl. Zwiebach 2009, 9)} $\ell_s$ haben. 
+
+
+\newpage
 \section{Einheitliche Feldtheorien}
+
  // Definition einer Feldtheorie\\
  // Bedeutung einer einheitlichen Feldtheorie\\
- Nach der Veröffentlichung und erfolgreichen experimentellen Verifizierung der Allgemeinen Relativitätstheorie suchte Einstein bis zu seinem Lebensende nach einer "Theorie von Allem" (englisch "Theory of Everything"). Dabei versuchte er das Problem einer solchen einheitlichen Feldtheorie mithilfe des hamiltonschen Prinzips zu lösen und veröffentlicht seine Ideen in der am 21. März erschienenen Arbeit "Einheitliche Feldtheorie und Hamiltonsches Prinzip" (vgl. Einstein 1929, 156). Einstein ging der Kaluza-Klein-Theorie nach, die als \textit{one of the first attempts to create a unified field theory} gilt. \textit{It was publishied in 1921 by German mathematician and physicist Theodor Kaluza and extended in 1926 by Oskar Klein.}(vgl. Zalo\v{z}nik 2012, 2)
+ Nach der Veröffentlichung und erfolgreichen experimentellen Verifizierung der Allgemeinen Relativitätstheorie suchte Einstein bis zu seinem Lebensende nach einer >>Theorie von Allem<< (englisch >>Theory of Everything<<). Dabei versuchte er das Problem einer solchen einheitlichen Feldtheorie mithilfe des hamiltonschen Prinzips zu lösen und veröffentlicht seine Ideen in der am 21. März erschienenen Arbeit >>Einheitliche Feldtheorie und Hamiltonsches Prinzip<< (vgl. Einstein 1929, 156). Einstein ging der Kaluza-Klein-Theorie nach, die als \textit{one of the first attempts to create a unified field theory} gilt. \textit{It was publishied in 1921 by German mathematician and physicist Theodor Kaluza and extended in 1926 by Oskar Klein.}(vgl. Zalo\v{z}nik 2012, 2)
  
 \subsection{Stringtheorie}
-Grundlagen
+Die Grundannahme der Stringtheorie, wie bereits in der Einleitung kurz angesprochen, lautet: "Teilchen sind nicht punktförmig, sondern bestimme Schwingungszustände, auch Schwingungsmoden genannt, von Strings" (Gubser 2011, 46). Solche Strings können offen sein, vergleichbar mit einem Faden mit der definierten Länge $\ell_s$ der zwischen zwei Punkten, genannt D-Branen, schwingt. Solche D-Branen sind "higher-dimensional membranes" (vgl. Zwiebach 2009, 9), was das genau das bedeutet wird in Kapitel 4.3 erläutert und, solange die Strings nicht wechselwirken, unendlich schwer. (vgl. Gubser 2011, 48) Strings können jedoch auch geschlossen sein, dann sind sie vergleichbar mit einem Gummiband das schwingt, werden jedoch mathematisch als "two commuting copies of the open string operators" (Zwiebach 2009, 280) beschrieben.  
 \begin{quote}
 When we speak of parameters in a theory, it is convenient to distinguish between dimensionful parameters and dimensionless parameters. [...] Stringtheory is said to have no adjustable parameters, meaning that no dimensionless parameter is needed to formulate string theory. String theory does, however, have one dimensionful parameter. That parameter is the string length $\ell_s$. (vgl. Zwiebach 2009, 14)\\
 \end{quote}
@@ -34,8 +94,10 @@ When we speak of parameters in a theory, it is convenient to distinguish between
 
 \subsection{Supergravitation}
 
+\newpage
 \section{Die Allgemeine Relativitätstheorie in der \\ Stringtheorie}
-
+Die "wissenschaftliche Schönheit" der Stringtheorie, die mit einen Grund für die Intensive Forschung an der Theorie Mitte des 20ten Jahrhunderts bis in die Gegenwart darstellt, ist die scheinbar perfekte mathematische Übereinscheinstimmung der Gravitationskraft mit den anderen drei physikalischen Grundkräften (dem Elektromagnetismus, sowie der Starken und Schwachen Kraft).  \\
+Dieses Kapitel befasst sich mit den relativistischen Aspekten der Stringtheorie, ihrer mathematischer Beschreibungen und . Zunächst wird das Lichtkegel Koordinaten System beschrieben, welches bei unserer? Untersuchung der Stringtheorie außerordentlich nützlich sein wird (vgl. Zwiebach, 22).  
 \subsection{Lichtkegel Koordinaten/Light-cone coordinates}
 \begin{quote}
 
@@ -44,21 +106,27 @@ The $x^ \mu$ are spacetime coordinates (vgl. Zwiebach 2009, 15)
 \end{quote}
 \subsection{Relativistische Strings}
 
-Dieses Kapitel beschäfg
+Dieses Kapitel beschäftigt sich mit den Eigenschaften und Voraussetzungen von Strings unter allgemeinrelativistischen Bedingungen.
 
 \subsubsection{Offene relativistische Strings}
 
 \subsubsection{Geschlossene relativistische Strings}
 
-\subsection{World-sheets}
+\begin{quote}
+    When it as first discovered, string theory as thought to be a theory of stronlgly interacting particales- a theory of hadrons. The consistency of open string theory required the inclusion of closed strings. But there as a problem with closed strings: among the excitations of closed strings there were massless states with spin to. No known hadron had these properties. Despite much effort, all attempts to eliminate these closed string states from the spectrum failed. It turns out that these massless states can be identified as graviton states, and physicists eventually realized that closed string theory could be a theory of quantum gravity. (Zwiebach 2009, 280) 
+\end{quote}
 
-\section{Nicht-relativistische Aspekte der \\ Stringtheorie}
+\subsection{Branen}
 
-\subsection{Nicht-Relativistische Strings}
+\subsection{Nicht-relativistische Aspekte der \\ Stringtheorie}
 
-\section{Verifizierungsprobleme der Stringtheorie}
+\subsubsection{Nicht-Relativistische Strings}
 
+\newpage
 \section{Fazit}
+\newpage
+
+\begin{otherlanguage}{ngerman}
 
 \begin{thebibliography}{9}
 
@@ -83,5 +151,5 @@ München: Wilhelm Goldmann
 Zalo\v{z}nik, An\v{z}e. 2012." Kaluza-Klein Theory". Aufgerufen am 11. Dezember 2018.\\
 http://mafija.fmf.uni-lj.si/seminar/files/2011\_2012/KaluzaKlein\_theory.pdf
 \end{thebibliography}
-
+\end{otherlanguage}
 \end{document}
